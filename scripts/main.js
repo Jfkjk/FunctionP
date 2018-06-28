@@ -31,8 +31,11 @@ function Factorial(y){
 document.write("<br/>");
 document.write(Factorial(4,4));
 function fibonacci(y){
-   
-    return next;
+    let fib= [0,1]
+    for(let i=1;i<=y;i++){
+        fib.push(add(fib[i],fib[add(i,-1)]));
+}
+    return fib[add(y,-1)];
 }
 document.write("<br/>");
 document.write(fibonacci(8));
